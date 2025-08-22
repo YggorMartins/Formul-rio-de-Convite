@@ -6,6 +6,7 @@
   height: 45.5rem;
   display: flex;
   justify-content: center;
+  
  
 }
 
@@ -15,9 +16,21 @@ header {
   height: 9rem;
   margin-top: 2rem;
   flex-direction: column;
+  gap: 1rem;
 
   & .confetti {
     margin-bottom: 1rem;
+  }
+
+  & h1 {
+    font: var(--logo);
+    color: var(--pink);
+  }
+
+  & p {
+    font: 300 1rem/1rem var(--font-family-sans);
+    color: var(--text-heading);
+    margin-top: 0.25rem;
   }
 }
 

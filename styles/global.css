@@ -6,16 +6,16 @@
 
 :root {
   --font-family-leckerli: 'Leckerli One', cursive;
-  --logo: 400 2.5rem/auto var(--font-family-leckerli);
+  --logo: 400 2.5rem/1rem var(--font-family-leckerli);
 
   --font-family-baloo: "Baloo 2", sans-serif;
-  --heading-md: 700 1.75rem/auto var(--font-family-baloo);
-  --heading-sm: 700 1.125rem/auto var(--font-family-baloo);
+  --heading-md: 700 1.75rem/1rem var(--font-family-baloo);
+  --heading-sm: 700 1.125rem/1rem var(--font-family-baloo);
 
   --font-family-sans: "Open Sans", sans-serif;
-  --body-md: 400 1rem/auto var(--font-family-sans);
-  --body-sm: 400 0.875rem/auto var(--font-family-sans);
-  --body-xs: 400 0.75rem/auto var(--font-family-sans);
+  --body-md: 400 1rem/1rem var(--font-family-sans);
+  --body-sm: 400 0.875rem/1rem var(--font-family-sans);
+  --body-xs: 400 0.75rem/1rem var(--font-family-sans);
 
   --brand-light: #59b2ff;
   --brand-mid: #3487cf;
