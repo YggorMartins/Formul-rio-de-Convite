@@ -1,0 +1,27 @@
+.aside-container {
+  background-image: url(../assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25rem;
+  height: 45.5rem;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+header {
+  display: flex;
+  width: 21rem;
+  height: 9rem;
+  margin-top: 2rem;
+  flex-direction: column;
+
+  & .confetti {
+    margin-bottom: 1rem;
+  }
+}
+
+.confetti {
+    width: 2.84rem;
+    height: 3rem;
+}
