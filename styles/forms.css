@@ -1,0 +1,10 @@
+fieldset {
+  border: none;
+  gap: 1rem;
+  display: grid;
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+}

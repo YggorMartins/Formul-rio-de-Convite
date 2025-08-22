@@ -10,7 +10,7 @@
  
 }
 
-header {
+.aside-header {
   display: flex;
   width: 21rem;
   height: 9rem;

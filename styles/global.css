@@ -46,3 +46,15 @@
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9; 
 }
+
+body {
+  display: flex;
+  background-color: var(--shape-background);
+  width: 100vh;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+}

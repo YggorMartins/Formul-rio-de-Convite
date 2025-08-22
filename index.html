@@ -17,7 +17,7 @@
 <body>
   <aside>
     <div class="aside-container">
-      <header>
+      <header class="aside-header">
         <img class="confetti" src="./assets/Logo.svg" alt="Icone de confetes">
         <h1>Festivite</h1>
         <p>Crie um convite digital para o seu evento</p>        
@@ -27,9 +27,24 @@
 
   <main>
      <header>
-      <h1>Crie seu convite</h1>
-      
+      <h1>Crie seu convite</h1>        
      </header>
+
+      <div class="info">
+        <h1>Sobre o evento</h1>
+      </div>
+
+     <form action="" method="post" enctype="multipart/form-data">
+      <fieldset class="invitation">
+
+        <div class="input-wrapper">
+              <label for="eventname">Título</label>
+              <input id="eventname" name="eventname"
+              type="text" 
+              placeholder="Nome do evento">
+            </div>
+      </fieldset>
+     </form>
   </main>
   
 </body>
