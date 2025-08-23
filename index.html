@@ -15,6 +15,7 @@
   <title>Formulário de Convite</title>
 </head>
 <body>
+  <div class="app">
   <aside>
     <div class="aside-container">
       <header class="aside-header">
@@ -25,13 +26,15 @@
     </div>
   </aside>
 
+  
   <main>
-     <header>
+     <header class="main-header">
       <h1>Crie seu convite</h1>        
      </header>
 
       <div class="info">
-        <h1>Sobre o evento</h1>
+        <img src="./icons/calendar.svg" alt="">
+        <h3>Sobre o evento</h3>
       </div>
 
      <form action="" method="post" enctype="multipart/form-data">
@@ -41,11 +44,117 @@
               <label for="eventname">Título</label>
               <input id="eventname" name="eventname"
               type="text" 
-              placeholder="Nome do evento">
+              placeholder="Nome do evento" required>
+              <div class="error">
+              <img src="./icons/danger.svg" alt="Ícone de alerta vermelho">
+              <span>Insira o nome do envento</span>
+              </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-wrapper">
+                <label for="startdate">Início</label>
+                <input id="startdate" name="startdate"
+                type="text" 
+                placeholder="DD/MM/AAAA --:--" required>
+                <div class="error">
+                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
+                <span>Insira a data/hora de início</span>
+                </div>
             </div>
+
+            <div class="input-wrapper">
+                <label for="enddate">Fim</label>
+                <input id="enddate" name="enddate"
+                type="text" 
+                placeholder="DD/MM/AAAA, --:--" required>
+                <div class="error">
+                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
+                <span>Insira a data/hora final</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="input-row">
+          <div class="input-wrapper">
+            <label>Tipo</label>
+            <div class="toggle-buttons" id="eventTypeToggle">
+              <div class="toggle-buttons">
+                <input type="radio" id="type-presencial" name="eventType" value="presencial" checked class="hidden-radio">
+              <label for="type-presencial" class="toggle-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>Presencial
+              </label>
+
+              
+
+              <input type="radio" id="type-online" name="eventType" value="online" class="hidden-radio">
+              <label for="type-online" class="toggle-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon lucide-video"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+                Online
+              </label>
+            </div>
+            </div>
+            </div>
+          
+
+          <div class="input-wrapper">
+            <label for="location">Local</label>
+            <input id="location" name="location"
+            type="text" 
+            placeholder="Link ou endereço" required>
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="description">Descrição</label>
+          <textarea name="description" id="description" 
+              placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div> 
+      </fieldset>
+
+      <fieldset class="personalization-container">
+        <div class="personalization-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush-vertical-icon lucide-paintbrush-vertical"><path d="M10 2v2"/><path d="M14 2v4"/><path d="M17 2a1 1 0 0 1 1 1v9H6V3a1 1 0 0 1 1-1z"/><path d="M6 12a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2h2a1 1 0 0 1 1 1v2.9a2 2 0 1 0 4 0V17a1 1 0 0 1 1-1h2a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1"/></svg>
+        <h3>Personalização</h3>
+        </div>
+
+        <p>Cor principal</p>
+        <div class="color-options">
+          <input type="radio" id="color-blue" name="primaryColor" value="blue" class="hidden-radio" checked>
+          <label for="color-blue" class="color-circle blue">
+            <img src="./icons/circle-default.svg" alt="">
+          </label>
+
+          <input type="radio" id="color-navy" name="primaryColor" value="navy" class="hidden-radio">
+          <label for="color-navy" class="color-circle navy"></label>
+
+          <input type="radio" id="color-purple" name="primaryColor" value="purple" class="hidden-radio">
+          <label for="color-purple" class="color-circle purple"></label>
+
+          <input type="radio" id="color-fuschia" name="primaryColor" value="fuschia" class="hidden-radio">
+          <label for="color-fuschia" class="color-circle fuschia"></label>
+
+          <input type="radio" id="color-danger" name="primaryColor" value="danger" class="hidden-radio">
+          <label for="color-danger" class="color-circle danger"></label>
+
+          <input type="radio" id="color-orange" name="primaryColor" value="orange" class="hidden-radio">
+          <label for="color-orange" class="color-circle orange"></label>
+
+          <input type="radio" id="color-yellow" name="primaryColor" value="yellow" class="hidden-radio">
+          <label for="color-yellow" class="color-circle yellow"></label>
+
+          <input type="radio" id="color-lime" name="primaryColor" value="lime" class="hidden-radio">
+          <label for="color-lime" class="color-circle lime"></label>
+
+          <input type="radio" id="color-green" name="primaryColor" value="green" class="hidden-radio">
+          <label for="color-green" class="color-circle green"></label>
+
+          <input type="radio" id="color-cyan" name="primaryColor" value="cyan" class="hidden-radio">
+          <label for="color-cyan" class="color-circle cyan"></label>
+        </div>
       </fieldset>
      </form>
   </main>
-  
+  </div>
 </body>
 </html>

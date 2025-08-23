@@ -5,9 +5,7 @@
   width: 25rem;
   height: 45.5rem;
   display: flex;
-  justify-content: center;
-  
- 
+  justify-content: center; 
 }
 
 .aside-header {

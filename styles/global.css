@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.app {
+  display: grid;  
+  grid-template-columns: 30rem 1fr;
+  width: 100vh;
+  overflow: hidden;
+  
+}
+
 :root {
   --font-family-leckerli: 'Leckerli One', cursive;
   --logo: 400 2.5rem/1rem var(--font-family-leckerli);
@@ -14,7 +22,7 @@
 
   --font-family-sans: "Open Sans", sans-serif;
   --body-md: 400 1rem/1rem var(--font-family-sans);
-  --body-sm: 400 0.875rem/1rem var(--font-family-sans);
+  --body-sm: 400 0.8rem/1rem var(--font-family-sans);
   --body-xs: 400 0.75rem/1rem var(--font-family-sans);
 
   --brand-light: #59b2ff;
@@ -24,7 +32,7 @@
   --purple: #B259FF;
   --fuschia: #FF59F9;
   --pink: #FF598B;
-  --orang: #FF8B59;
+  --orange: #FF8B59;
   --yellow: #FFCD59;
   --lime: #E1FF59;
   --green: #59FF91;
@@ -48,13 +56,16 @@
 }
 
 body {
-  display: flex;
-  background-color: var(--shape-background);
-  width: 100vh;
+  background-color: var(--shape-body);
+  width: 100vw;
   height: 100vh;
 }
 
 main {
-  width: 100%;
-  flex: 1;
+  overflow: auto;
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+
 }

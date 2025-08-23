@@ -1,0 +1,98 @@
+.personalization-container {
+  display: grid;
+  margin-top: 3rem;
+  
+
+  & .personalization-header {
+  display: flex;
+  margin-top: 2.5rem;
+  gap: 0.75rem;
+  align-items: center;  
+
+  & svg {
+    color: var(--input-placeholder);
+  }
+  }
+}
+
+p {
+  font: var(--body-xs);
+  color: var(--text-body);
+  margin-top: 1.5rem;
+}
+
+.color-options {
+  display: flex;
+  gap: auto;
+  margin-top: 1rem;
+
+}
+
+.color-options .hidden-radio {
+  position: absolute;
+  opacity: 0; 
+  width: 0;
+  height: 0;
+  pointer-events: none; 
+}
+
+
+.color-options .color-circle {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%; 
+  border: 2px solid transparent; /
+  cursor: pointer;
+  transition: border-color 0.2s ease; 
+}
+
+
+.color-options .color-circle:hover {
+  border-color: var(--brand-light); 
+}
+
+
+.color-options .hidden-radio:checked + .color-circle {
+  border-color: var(--brand-light); 
+}
+
+
+.color-options .blue {
+  background-color: var(--brand-light); 
+}
+
+.color-options .navy {
+  background-color: var(--navy); 
+}
+
+.color-options .purple {
+  background-color: var(--purple); 
+}
+
+.color-options .fuschia {
+  background-color: var(--fuschia);
+}
+
+.color-options .danger {
+  background-color: var(--danger); 
+}
+
+.color-options .orange {
+  background-color: var(--orang); 
+}
+
+.color-options .yellow {
+  background-color: var(--yellow); 
+}
+
+.color-options .lime {
+  background-color: var(--lime); 
+}
+
+.color-options .green {
+  background-color: var(--green); 
+}
+
+.color-options .cyan {
+  background-color: var(--cyan); 
+}

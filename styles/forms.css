@@ -1,10 +1,92 @@
 fieldset {
   border: none;
-  gap: 1rem;
+  
   display: grid;
+  gap: 1rem;
 }
 
-label {
-  font: var(--body-sm);
-  color: var(--text-body);
+.toggle-buttons {
+  display: flex;
+  position: relative;
+  height: 3rem;
+  background-color: var(--input-base);
+  border-radius: .5rem;
+  border: 1px solid var(--input-stroke);
+  overflow: hidden;
+  gap: .25rem;
+  cursor: pointer;
+  align-items: center;
+
+  &:hover {
+    border: 1px solid var(--brand-light);
+    color: var(--brand-light);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--brand-light);
+    color: var(--text-heading);
+  }
+
+  & .toggle-buttons > svg {
+    height: 1rem;
+    width: 1rem;
+  }
+   
+
+  & .toggle-button {
+    display: flex;
+    gap: .25rem;
+    background-color: var(--input-base);
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    font: var(--body-sm);
+    color: var(--text-body);
+    
+
+    width: 8rem;
+    height: 2.5rem;
+
+
+    &:hover:not(.active) {
+      background-color: var(--shape-hover);
+    }
+  }
 }
+
+.hidden-radio {
+  position: absolute;
+  opacity: 0; 
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.hidden-radio:checked + .toggle-button {
+  background-color: var(--shape-button); 
+  color: var(--text-heading); 
+
+  & svg {
+    color: var(--brand-light);
+  }
+}
+
+.toggle-button:hover:not(.hidden-radio:checked + .toggle-button) {
+  background-color: var(--shape-hover); 
+}
+
+#description {
+  display: flex;
+  
+  height: 8.5rem;
+  background-color: var(--input-base);
+  border-radius: 1rem;
+  font: var(--body-md);
+  color: var(--text-body);
+  border: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem; 
+}
+
