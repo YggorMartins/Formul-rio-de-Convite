@@ -7,7 +7,8 @@
 .app {
   display: grid;  
   grid-template-columns: 30rem 1fr;
-  width: 100vh;
+  /* width: auto;
+  height: auto; */
   overflow: hidden;
   
 }
@@ -57,15 +58,17 @@
 
 body {
   background-color: var(--shape-body);
-  width: 100vw;
-  height: 100vh;
+  
 }
 
-main {
-  overflow: auto;
-  
+main {  
+  min-width: 0;
+  max-width: 560px;
+  height: 100%;
+  border: 1px solid red;/
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-
+  overflow-y: auto;
+  overflow-x: hidden;
 }

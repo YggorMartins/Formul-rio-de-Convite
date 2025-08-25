@@ -46,8 +46,8 @@
               type="text" 
               placeholder="Nome do evento" required>
               <div class="error">
-              <img src="./icons/danger.svg" alt="Ícone de alerta vermelho">
-              <span>Insira o nome do envento</span>
+                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
+                <span>Insira o nome do envento</span>
               </div>
           </div>
 
@@ -57,10 +57,10 @@
                 <input id="startdate" name="startdate"
                 type="text" 
                 placeholder="DD/MM/AAAA --:--" required>
-                <div class="error">
-                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
-                <span>Insira a data/hora de início</span>
-                </div>
+                  <div class="error">
+                    <img src="./icons/danger.svg" alt="Ícone de     alerta  vermelho">
+                    <span>Insira a data/hora de início</span>
+                  </div>
             </div>
 
             <div class="input-wrapper">
@@ -69,8 +69,8 @@
                 type="text" 
                 placeholder="DD/MM/AAAA, --:--" required>
                 <div class="error">
-                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
-                <span>Insira a data/hora final</span>
+                  <img src="./icons/danger.svg" alt="Ícone de   alerta  vermelho">
+                  <span>Insira a data/hora final</span>
                 </div>
               </div>
           </div>
@@ -79,7 +79,7 @@
           <div class="input-wrapper">
             <label>Tipo</label>
             <div class="toggle-buttons" id="eventTypeToggle">
-              <div class="toggle-buttons">
+              
                 <input type="radio" id="type-presencial" name="eventType" value="presencial" checked class="hidden-radio">
               <label for="type-presencial" class="toggle-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>Presencial
@@ -92,7 +92,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon lucide-video"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
                 Online
               </label>
-            </div>
+            
             </div>
             </div>
           
@@ -122,37 +122,189 @@
         <div class="color-options">
           <input type="radio" id="color-blue" name="primaryColor" value="blue" class="hidden-radio" checked>
           <label for="color-blue" class="color-circle blue">
-            <img src="./icons/circle-default.svg" alt="">
+            <div class="circle-blue"></div>
           </label>
 
           <input type="radio" id="color-navy" name="primaryColor" value="navy" class="hidden-radio">
-          <label for="color-navy" class="color-circle navy"></label>
+          <label for="color-navy" class="color-circle navy">
+            <div class="circle-navy"></div>
+          </label>
 
           <input type="radio" id="color-purple" name="primaryColor" value="purple" class="hidden-radio">
-          <label for="color-purple" class="color-circle purple"></label>
+          <label for="color-purple" class="color-circle purple">
+            <div class="circle-purple"></div>
+          </label>
 
           <input type="radio" id="color-fuschia" name="primaryColor" value="fuschia" class="hidden-radio">
-          <label for="color-fuschia" class="color-circle fuschia"></label>
+          <label for="color-fuschia" class="color-circle fuschia">
+            <div class="circle-fuschia"></div>
+          </label>
+
+          <input type="radio" id="color-pink" name="primaryColor" value="pink" class="hidden-radio">
+          <label for="color-pink" class="color-circle pink">
+            <div class="circle-pink"></div>
+          </label>
 
           <input type="radio" id="color-danger" name="primaryColor" value="danger" class="hidden-radio">
-          <label for="color-danger" class="color-circle danger"></label>
+          <label for="color-danger" class="color-circle danger">
+            <div class="circle-danger"></div>
+          </label>
 
           <input type="radio" id="color-orange" name="primaryColor" value="orange" class="hidden-radio">
-          <label for="color-orange" class="color-circle orange"></label>
+          <label for="color-orange" class="color-circle orange">
+            <div class="circle-orange"></div>
+          </label>
 
           <input type="radio" id="color-yellow" name="primaryColor" value="yellow" class="hidden-radio">
-          <label for="color-yellow" class="color-circle yellow"></label>
+          <label for="color-yellow" class="color-circle yellow">
+            <div class="circle-yellow"></div>
+          </label>
 
           <input type="radio" id="color-lime" name="primaryColor" value="lime" class="hidden-radio">
-          <label for="color-lime" class="color-circle lime"></label>
+          <label for="color-lime" class="color-circle lime">
+            <div class="circle-lime"></div>
+          </label>
 
           <input type="radio" id="color-green" name="primaryColor" value="green" class="hidden-radio">
-          <label for="color-green" class="color-circle green"></label>
+          <label for="color-green" class="color-circle green">
+            <div class="circle-green"></div>
+          </label>
 
           <input type="radio" id="color-cyan" name="primaryColor" value="cyan" class="hidden-radio">
-          <label for="color-cyan" class="color-circle cyan"></label>
+          <label for="color-cyan" class="color-circle cyan">
+            <div class="circle-cyan"></div>
+          </label>
         </div>
-      </fieldset>
+        </fieldset>
+
+        <fieldset class="theme-container">
+          <p>Tema do evento</p>
+          <div class="grid-container">
+
+            <input type="radio" id="birthday" name="theme"  value="birthday" class="hidden-radio" >
+            <label for="birthday" class="card-button birthday">
+              <img src="./assets/aniversary.svg" alt="">
+              <span>Aniversário</span>
+            </label>
+
+            <input type="radio" id="childish" name="theme"  value="childish" class="hidden-radio" >
+            <label for="childish" class="card-button childish">
+              <img src="./assets/childish.svg" alt="">
+               <span>Infantil</span>
+            </label>
+
+            <input type="radio" id="graduation" name="theme"  value="graduation" class="hidden-radio" >
+            <label for="graduation" class="card-button gratuadion">
+              <img src="./assets/graduation.svg" alt="">
+               <span>Formatura</span>
+            </label> 
+
+            <input type="radio" id="marriage" name="theme"  value="marriage" class="hidden-radio" >
+            <label for="marriage" class="card-button marriage">
+              <img src="./assets/marriage.svg" alt="">
+               <span>Casamento</span>
+            </label>
+
+            <input type="radio" id="baby-shower" name="theme"  value="birthday" class="hidden-radio" >
+            <label for="baby-shower" class="card-button baby-shower">
+              <img src="./assets/baby-shower.svg" alt="">
+               <span>Chá de bebê</span>
+            </label>
+
+            <input type="radio" id="bridal-shower" name="theme"  value="bridal-shower" class="hidden-radio" >
+            <label for="bridal-shower" class="card-button bridal-shower">
+              <img src="./assets/bridal-shower.svg" alt="">
+               <span>Chá de panela</span>
+            </label>
+
+            <input type="radio" id="carnival" name="theme"  value="carnival" class="hidden-radio" >
+            <label for="carnival" class="card-button carnival">
+              <img src="./assets/carnival.svg" alt="">
+               <span>Carnaval</span>
+            </label> 
+
+            <input type="radio" id="Easter" name="theme"  value="Easter" class="hidden-radio" >
+            <label for="Easter" class="card-button Easter">
+              <img src="./assets/easter.svg" alt="">
+               <span>Páscoa</span>
+            </label>
+
+            <input type="radio" id="saint" name="theme"  value="saint" class="hidden-radio" >
+            <label for="saint" class="card-button saint">
+              <img src="./assets/saint-jhon.svg" alt="">
+               <span>São João</span>
+            </label> 
+
+            <input type="radio" id="halloween" name="theme"  value="halloween" class="hidden-radio" >
+            <label for="halloween" class="card-button halloween">
+              <img src="./assets/halloween.svg" alt="">
+               <span>Halloween</span>
+            </label>
+
+            <input type="radio" id="christmas" name="theme"  value="christmas" class="hidden-radio" >
+            <label for="christmas" class="card-button christmas">
+              <img src="./assets/christmas.svg" alt="">
+              <span>Natal</span>
+            </label>
+
+            <input type="radio" id="other" name="theme"  value="other" class="hidden-radio" >
+            <label for="other" class="card-button other">
+              <img src="./assets/other.svg" alt="">
+               <span>Outro</span>
+            </label>
+
+            <div class="style-button">
+              <p>Escuro</p>
+              <img src="./assets/style-button.svg" alt="ícone de um botão para mudar a cor da pagina">
+            </div>
+
+            <div class="droparea-wrapper">
+
+              <label for="picture">Selecionar</label>
+
+              <div class="dropzone">              
+              <input type="file" name="picture" id="picture">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#59B2FF"/>
+              </svg>              
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="contactname">Nome</label>
+              <input id="contactname" name="contactname"
+              type="text" 
+              placeholder="Nome completo" required>
+              <div class="error">
+                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
+                <span>Campo obrigatório</span>
+              </div>
+          </div>
+
+          <div class="input-wrapper">
+              <label for="mail">E-mail</label>
+              <input id="mail" name="mail"
+              type="mail" 
+              placeholder="exemplo@email.com" required>
+              <div class="error">
+                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
+                <span>Campo obrigatório</span>
+              </div>
+          </div>
+
+          <div class="input-wrapper">
+              <label for="phone">E-mail</label>
+              <input id="phone" name="phone"
+              type="number" 
+              placeholder="(99) 99999-9999" required>
+              <div class="error">
+                <img src="./icons/danger.svg" alt="Ícone de alerta  vermelho">
+                <span>Campo obrigatório</span>
+              </div>
+          </div>
+
+          </div>
+        </fieldset>
      </form>
   </main>
   </div>

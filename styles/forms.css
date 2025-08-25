@@ -1,21 +1,21 @@
 fieldset {
   border: none;
   
-  display: grid;
+  display: grid;  
   gap: 1rem;
 }
 
 .toggle-buttons {
   display: flex;
   position: relative;
-  height: 3rem;
   background-color: var(--input-base);
   border-radius: .5rem;
   border: 1px solid var(--input-stroke);
   overflow: hidden;
   gap: .25rem;
-  cursor: pointer;
+  
   align-items: center;
+  /* border: 1px solid red; */
 
   &:hover {
     border: 1px solid var(--brand-light);
@@ -36,7 +36,8 @@ fieldset {
 
   & .toggle-button {
     display: flex;
-    gap: .25rem;
+    gap: .75rem;
+    padding: .75rem;
     background-color: var(--input-base);
     border-radius: .5rem;
     border: none;
@@ -46,9 +47,12 @@ fieldset {
     font: var(--body-sm);
     color: var(--text-body);
     
+    cursor: pointer;
+    
+    
 
-    width: 8rem;
-    height: 2.5rem;
+    width: 9rem;
+    height: 3rem;
 
 
     &:hover:not(.active) {
