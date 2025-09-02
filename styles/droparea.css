@@ -1,0 +1,51 @@
+
+
+.file-select-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  
+  font: var(--body-sm);
+  color: var(--text-heading);
+
+  &:hover {
+    border-color: var(--brand-light);
+  }
+}
+
+.file-button svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--input-placeholder);
+}
+
+.file-name {
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.error {
+  display: flex;
+  gap: .3rem;
+}
+
+.error > span {
+  font: var(--body-xs);
+  color: var(--danger);
+}

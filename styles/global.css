@@ -6,11 +6,7 @@
 
 .app {
   display: grid;  
-  grid-template-columns: 30rem 1fr;
-  /* width: auto;
-  height: auto; */
-  overflow: hidden;
-  
+  grid-template-columns: 32.79% 65.21%;  
 }
 
 :root {
@@ -25,6 +21,7 @@
   --body-md: 400 1rem/1rem var(--font-family-sans);
   --body-sm: 400 0.8rem/1rem var(--font-family-sans);
   --body-xs: 400 0.75rem/1rem var(--font-family-sans);
+  --body-sb: 600 0.8rem/1rem var(--font-family-sans);
 
   --brand-light: #59b2ff;
   --brand-mid: #3487cf;
@@ -62,13 +59,11 @@ body {
 }
 
 main {  
-  min-width: 0;
-  max-width: 560px;
+  margin-right: auto;
+  min-width: 560px;
   height: 100%;
-  border: 1px solid red;/
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-  overflow-y: auto;
-  overflow-x: hidden;
+  padding: 5rem;
 }

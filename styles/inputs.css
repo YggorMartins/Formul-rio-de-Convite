@@ -6,7 +6,7 @@
   & label {
     font: var(--body-sm);
     color: var(--text-body);
-    display: block;
+
   }
 
   & input {
@@ -30,6 +30,10 @@
     color: var(--text-heading);
   }
 
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+
   &[required] + .error {
     display: flex;
     align-items: center;
@@ -37,6 +41,12 @@
 
     font: var(--body-xs);
     color: var(--danger);
+
+    margin-top: .25rem;
+  }
+
+  &:not(focus):valid + .error {
+    display: none;
   }
   }  
 

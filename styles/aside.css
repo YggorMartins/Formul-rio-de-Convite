@@ -1,38 +1,53 @@
 .aside-container {
   background-image: url(../assets/Background.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 25rem;
-  height: 45.5rem;
+  background-size: contain;
+  padding: 1.25rem;
+  width: 400px;
+  height: 728px;
   display: flex;
-  justify-content: center; 
+
+
+  overflow: hidden;
 }
 
 .aside-header {
   display: flex;
-  width: 21rem;
-  height: 9rem;
-  margin-top: 2rem;
   flex-direction: column;
-  gap: 1rem;
+
+  & .aside-text {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    width: 336px;
+    height: 144px;
+    gap: 16px;
+
+  }
+  
 
   & .confetti {
     margin-bottom: 1rem;
+    
   }
 
   & h1 {
     font: var(--logo);
     color: var(--pink);
+    
   }
 
   & p {
     font: 300 1rem/1rem var(--font-family-sans);
     color: var(--text-heading);
     margin-top: 0.25rem;
-  }
+    
+
+  
 }
 
 .confetti {
     width: 2.84rem;
     height: 3rem;
+}
 }

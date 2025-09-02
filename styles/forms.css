@@ -1,8 +1,11 @@
 fieldset {
   border: none;
-  
+
+  max-width: 560px;
+  max-height: 1736px;
   display: grid;  
   gap: 1rem;
+
 }
 
 .toggle-buttons {
@@ -15,7 +18,7 @@ fieldset {
   gap: .25rem;
   
   align-items: center;
-  /* border: 1px solid red; */
+
 
   &:hover {
     border: 1px solid var(--brand-light);
@@ -48,9 +51,6 @@ fieldset {
     color: var(--text-body);
     
     cursor: pointer;
-    
-    
-
     width: 9rem;
     height: 3rem;
 
@@ -93,4 +93,3 @@ fieldset {
   border: 1px solid var(--input-stroke);
   padding: 0.75rem 1rem; 
 }
-

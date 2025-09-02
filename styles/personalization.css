@@ -28,7 +28,6 @@ p {
   display: flex;
   gap: 9px;
   margin-top: 16px;
-  border: 1px solid red;
 }
 
 .color-options .hidden-radio {
