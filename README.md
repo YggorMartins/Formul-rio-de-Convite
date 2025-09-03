@@ -1,4 +1,3 @@
-Certo! Aqui está um modelo de README para o seu projeto no GitHub, escrito em português. Ele descreve o projeto, as tecnologias usadas e o que você aprendeu com o desafio.
 
 ---
 
