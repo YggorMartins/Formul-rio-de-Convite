@@ -35,6 +35,7 @@ fieldset {
     height: 1rem;
     width: 1rem;
   }
+
    
 
   & .toggle-button {
@@ -53,12 +54,15 @@ fieldset {
     cursor: pointer;
     width: 9rem;
     height: 3rem;
-
-
+    
     &:hover:not(.active) {
       background-color: var(--shape-hover);
     }
   }
+}
+
+.toggle-button svg path {
+  fill: var(--input-placeholder);
 }
 
 .hidden-radio {
@@ -69,18 +73,25 @@ fieldset {
   pointer-events: none;
 }
 
-.hidden-radio:checked + .toggle-button {
+.hidden-radio:checked + .toggle-button  {
   background-color: var(--shape-button); 
   color: var(--text-heading); 
+}
 
-  & svg {
-    color: var(--brand-light);
-  }
+.hidden-radio:checked + .toggle-button svg path {
+  background-color: var(--shape-button); 
+  fill: var(--brand-light); 
 }
 
 .toggle-button:hover:not(.hidden-radio:checked + .toggle-button) {
   background-color: var(--shape-hover); 
 }
+
+.toggle-button:hover:not(.hidden-radio:checked + .toggle-button) svg path {
+  background-color: var(--shape-hover); 
+  fill: var(--input-placeholder);
+}
+
 
 #description {
   display: flex;

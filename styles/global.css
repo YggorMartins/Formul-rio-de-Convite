@@ -19,7 +19,8 @@
 
   --font-family-sans: "Open Sans", sans-serif;
   --body-md: 400 1rem/1rem var(--font-family-sans);
-  --body-sm: 400 0.8rem/1rem var(--font-family-sans);
+  --body-md-sb: 600 1rem/1rem var(--font-family-sans);
+  --body-sm: 400 0.875rem/1rem var(--font-family-sans);
   --body-xs: 400 0.75rem/1rem var(--font-family-sans);
   --body-sb: 600 0.8rem/1rem var(--font-family-sans);
 
@@ -66,4 +67,9 @@ main {
   flex-direction: column;
   margin-top: 3rem;
   padding: 5rem;
+
+}
+
+.line {
+  border: 1px solid var(--input-stroke);
 }
