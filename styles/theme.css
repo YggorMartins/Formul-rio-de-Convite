@@ -127,7 +127,9 @@
 }
 
 
-
+.style-button:checked .switch-button {
+  background-image: url(../icons/style-button-checked.svg);
+}
 
 .dropzone {
   display: flex;
